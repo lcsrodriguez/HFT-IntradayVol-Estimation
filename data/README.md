@@ -21,6 +21,12 @@ The first file will be widely used during this project.
 
 > The order of the fields in the tick files (with bid/ask prices) is: **Date,Time,Price,Bid,Ask,Size**. Our bid/ask prices are recorded whenever a trade occurs and they represent the "national best bid and offer" (NBBO) prices across multiple exchanges and ECNs.
 
+> For each trade, current best bid/ask values are recorded together with the transaction price and volume. Trade records are not aggregated and all transactions are included in their consecutive order.
+
+> The order of fields in our regular tick files **(without bid/ask)** is: **Date,Time,Price,Size**.
+
+*Source*: http://www.kibot.com/Support.aspx#tick_data_format
+
 
 ## Miscellaneous
 
