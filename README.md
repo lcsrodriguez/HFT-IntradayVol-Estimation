@@ -12,6 +12,21 @@ The main objectives of this project are:
 4. Plot the evolution of the estimated daily volatility of the IVE over the last year.
 
 
+## Dataset source
+
+
+The dataset is extracted from the free data samples offered by **Kibot**.
+
+To update the used dataset to the most updated information, please execute the following command:
+
+
+```shell
+URL=http://api.kibot.com/?action=history&symbol=IVE&interval=tickbidask&bp=1&user=guest
+wget $URL
+```
+
+
+
 ## Remarks
 
 - In order to compare the realized volatility over several time frequencies, we have to slice the observation samples with respect to the time column with the given time step, because we cannot download data for each asked frequency (30 sec, 1 min, ...).
