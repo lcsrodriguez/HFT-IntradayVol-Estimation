@@ -1,3 +1,4 @@
 data/*.txt
+img/
 .DS_Store
 .ipynb_checkpoints/
