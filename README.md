@@ -14,6 +14,13 @@ The main objectives of this project are:
 
 *The academic report highlighting the research tracks, solutions and main results is available [here](docs/report.pdf).*
 
+
+Please first install all the requirements in order to run the Jupyter Notebook
+```shell
+pip3 install -r requirements.txt
+jupyter-notebook main.ipynb
+```
+
 ## Dataset source
 
 
