@@ -1,0 +1,6 @@
+numpy
+pandas
+missingno
+matplotlib
+copy
+warnings
