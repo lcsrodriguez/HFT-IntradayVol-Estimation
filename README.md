@@ -42,6 +42,19 @@ wget $URL
 - In order to compare the realized volatility over several time frequencies, we have to slice the observation samples with respect to the time column with the given time step, because we cannot download data for each asked frequency (30 sec, 1 min, ...).
 - All the relevant images (charts, tables) are available in the folders `out/` or `img/`.
 
+## [UPDATE]
+
+The presented approach uses an average resampling, by implementing the following procedure:
+
+```python
+# df: price dataframe/series (pandas)
+freq: str = "1D" # resampling frequency
+df.resample(freq).mean() # the .mean() represents the aggregation method used. 
+```
+
+However, since we assume that the price of the asset at time $t$ is given by the value of the closest (in time) past transaction, we are strongly encourage to take the value of the left of each sampled interval, instead of the mean (the mean increases the autocovariance since the same element is captured twice per computation, and we cannot recover the negative autocorrelation effect when we study the $\vartheta$ size).
+
+This means that the research work presented in the report is taking into account a pre-averaging method, in order to capture and reduce the micro-structure noise $\vartheta$.
 
 ## License
 
