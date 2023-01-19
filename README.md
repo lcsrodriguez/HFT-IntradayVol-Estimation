@@ -42,7 +42,7 @@ wget $URL
 - In order to compare the realized volatility over several time frequencies, we have to slice the observation samples with respect to the time column with the given time step, because we cannot download data for each asked frequency (30 sec, 1 min, ...).
 - All the relevant images (charts, tables) are available in the folders `out/` or `img/`.
 
-## [UPDATE]
+## 🚨 [UPDATE]
 
 The presented approach uses an average resampling, by implementing the following procedure:
 
