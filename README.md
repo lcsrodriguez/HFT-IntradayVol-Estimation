@@ -1,6 +1,8 @@
 # Intraday volatility estimation from high frequency data
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lcsrodriguez/HFT-IntradayVol-Estimation/HEAD?urlpath=https%3A%2F%2Fgithub.com%2Flcsrodriguez%2FHFT-IntradayVol-Estimation%2Fblob%2Fmain%2Fmain.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lcsrodriguez/HFT-IntradayVol-Estimation/HEAD) &nbsp;[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lcsrodriguez/HFT-IntradayVol-Estimation)
+
+
 
 ## Overview
 
